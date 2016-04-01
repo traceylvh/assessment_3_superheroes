@@ -1,0 +1,11 @@
+<h2>The List</h2>
+
+<div ng-repeat="item in heroArray.allHeroes">
+  <h3>{{ item.alias }}</h3>
+  <p>simple human name: {{ item.first_name}} {{ last_name}}</p>
+  <p>city: {{ item.city }}</p>
+  <p>superpower: {{ item.power_name }}</p>
+
+  <button ng-click="deleteData(item._id)">Hero No Longer</button>
+
+</div>
